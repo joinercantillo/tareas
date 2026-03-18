@@ -1,8 +1,10 @@
-clases =int(input('BIENVENIDO A LA ACEDEMIA DE BAILE **** \n cuantas veces asistio a clase el estudiante en este mes?'))
-if clases < 5:
-    print('asistencia baja')
-elif clases in range (5, 8):
-    print('asistencia media')
-elif clases > 9:
-    print('asistencia alta')
+clases =int(input('WELCOME TO THE DANCE ACADEMY **** \n HOW MANY TIMES ASSIST THE STUDENT IN THIS MONTH? \n' ))
+levels = (
+    ['low assistance'] * 5 +
+    ['middle assistance'] * 3 +
+    ['high assistance'] * 9999
+)
+
+
+print('the student have a ', levels[clases])
     
